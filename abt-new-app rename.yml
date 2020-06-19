@@ -1,0 +1,603 @@
+version: 43.0.9
+pageUuid: e224230a-67e1-11ea-b0b4-bba9dedb08fc
+appTemplate:
+  isFetching: false
+  plugins:
+    ordered:
+      - query1:
+          pluginTemplate:
+            id: query1
+            type: datasource
+            subtype: SqlQuery
+            resourceName: onprem-db
+            template:
+              ordered:
+                - queryRefreshTime: ''
+                - databasePasswordOverride: ''
+                - queryDisabledMessage: ''
+                - successMessage: ''
+                - queryDisabled: ''
+                - playgroundQuerySaveId: 12
+                - resourceNameOverride: ''
+                - runWhenModelUpdates: true
+                - query: select * from audit_trail_events limit 10
+                - playgroundQueryUuid: 075707da-eaef-4662-9d43-c33975a8a302
+                - playgroundQueryId: 3
+                - privateParams: []
+                - triggersOnSuccess: []
+                - runWhenPageLoadsDelay: ''
+                - warningCodes: []
+                - data: null
+                - importedQueryInputs:
+                    ordered: []
+                - showSuccessConfetti: false
+                - isImported: true
+                - showSuccessToaster: true
+                - dataArray: []
+                - cacheKeyTtl: ''
+                - triggersOnFailure: []
+                - databaseNameOverride: ''
+                - confirmationMessage: null
+                - isFetching: false
+                - rawData: null
+                - queryTriggerDelay: '0'
+                - watchedParams: []
+                - timestamp: 0
+                - importedQueryDefaults:
+                    ordered: []
+                - enableTransformer: false
+                - runWhenPageLoads: false
+                - transformer: >-
+                    // type your code here
+
+                    // example: return formatDataAsArray(data).filter(row =>
+                    row.quantity > 20)
+
+                    return data
+                - queryTimeout: '10001'
+                - requireConfirmation: false
+                - enableCaching: false
+                - databaseUsernameOverride: ''
+                - shouldEnableBatchQuerying: false
+                - queryThrottleTime: '750'
+            createdAt: 2020-03-16T23:57:25.115Z
+            updatedAt: 2020-04-10T12:37:52.255Z
+      - text1:
+          pluginTemplate:
+            id: text1
+            type: widget
+            subtype: TextWidget
+            template:
+              ordered:
+                - horizontalAlign: left
+                - truncateOverflow: false
+                - verticalAlign: center
+                - scrollOverflow: false
+                - tooltipText: ''
+                - value: "**Hello** friend! \U0001F603\n\n"
+                - renderAsHtml: false
+                - backgroundColor: '#0000'
+                - textColor: '#312929'
+                - renderAsMarkdown: true
+            position2:
+              position2:
+                row: 2
+                col: 6
+                height: 1
+                width: 3
+            createdAt: 2020-03-16T23:57:27.156Z
+            updatedAt: 2020-03-16T23:57:27.156Z
+      - select1:
+          pluginTemplate:
+            id: select1
+            type: widget
+            subtype: SelectWidget
+            template:
+              ordered:
+                - values: '[1,2,3]'
+                - allowOutOfRangeValues: false
+                - enableFuzzyMatching: true
+                - searchValue: ''
+                - validationMessage: ''
+                - displayValue: ''
+                - tooltipText: ''
+                - value: ''
+                - maxResults: 50
+                - placeholder: ''
+                - label: Numbers
+                - labelMaxWidth: ''
+                - labelPlacedOnLeft: false
+                - validationState: ''
+                - onSelect: ''
+                - disabled: ''
+                - hideClearButton: false
+                - required: false
+                - labels: ''
+            position2:
+              position2:
+                row: 4
+                col: 7
+                height: 1
+                width: 4
+            createdAt: 2020-03-16T23:57:29.010Z
+            updatedAt: 2020-03-16T23:57:29.010Z
+      - button1:
+          pluginTemplate:
+            id: button1
+            type: widget
+            subtype: ButtonWidget
+            template:
+              ordered:
+                - valueToCopy: ''
+                - color: '#3c92dc'
+                - internalUrlHashParams: ''
+                - exportFileType: csv
+                - buttonType: action
+                - exportTemplate: null
+                - url: ''
+                - newWindow: false
+                - value: Submit
+                - exportQuery: ''
+                - action: query4
+                - internalUrlQuery: ''
+                - internalUrlPath: ''
+                - exportFileName: ''
+                - loading: ''
+                - disabled: ''
+            position2:
+              position2:
+                row: 8
+                col: 7
+                height: 1
+                width: 2
+            createdAt: 2020-03-16T23:57:30.712Z
+            updatedAt: 2020-04-23T15:41:14.943Z
+      - transformer1:
+          pluginTemplate:
+            id: transformer1
+            type: function
+            subtype: Function
+            template:
+              ordered:
+                - funcBody: |+
+                    return appOwners("App 1")
+
+                - value: ''
+            createdAt: 2020-04-09T20:37:05.584Z
+            updatedAt: 2020-04-09T20:54:00.216Z
+      - query2:
+          pluginTemplate:
+            id: query2
+            type: datasource
+            subtype: JavascriptQuery
+            resourceName: JavascriptQuery
+            template:
+              ordered:
+                - queryRefreshTime: ''
+                - queryDisabledMessage: ''
+                - successMessage: ''
+                - queryDisabled: ''
+                - playgroundQuerySaveId: 0
+                - resourceNameOverride: ''
+                - runWhenModelUpdates: false
+                - query: 'return '
+                - playgroundQueryUuid: ''
+                - playgroundQueryId: 0
+                - privateParams: []
+                - triggersOnSuccess: []
+                - runWhenPageLoadsDelay: ''
+                - data: null
+                - importedQueryInputs:
+                    ordered: []
+                - showSuccessConfetti: false
+                - isImported: false
+                - showSuccessToaster: true
+                - cacheKeyTtl: ''
+                - triggersOnFailure: []
+                - confirmationMessage: null
+                - isFetching: false
+                - rawData: null
+                - queryTriggerDelay: '0'
+                - watchedParams: []
+                - timestamp: 0
+                - importedQueryDefaults:
+                    ordered: []
+                - enableTransformer: false
+                - runWhenPageLoads: false
+                - transformer: >-
+                    // type your code here
+
+                    // example: return formatDataAsArray(data).filter(row =>
+                    row.quantity > 20)
+
+                    return data
+                - queryTimeout: '10000'
+                - requireConfirmation: false
+                - enableCaching: false
+                - queryThrottleTime: '750'
+            createdAt: 2020-04-09T20:39:06.364Z
+            updatedAt: 2020-04-09T20:40:51.177Z
+      - jsonexplorer1:
+          pluginTemplate:
+            id: jsonexplorer1
+            type: widget
+            subtype: JSONExplorerWidget
+            template:
+              ordered:
+                - value: '{{query1.data}}'
+                - html: false
+                - expandNodes: true
+            position2:
+              position2:
+                row: 3
+                col: 1
+                height: 11
+                width: 6
+            createdAt: 2020-04-10T12:37:37.859Z
+            updatedAt: 2020-04-10T12:38:02.443Z
+      - query3:
+          pluginTemplate:
+            id: query3
+            type: datasource
+            subtype: RESTQuery
+            resourceName: Star Wars
+            template:
+              ordered:
+                - queryRefreshTime: ''
+                - paginationLimit: ''
+                - body: ''
+                - queryDisabledMessage: ''
+                - successMessage: ''
+                - queryDisabled: ''
+                - playgroundQuerySaveId: 0
+                - resourceNameOverride: ''
+                - runWhenModelUpdates: true
+                - paginationPaginationField: ''
+                - headers: ''
+                - paginationEnabled: false
+                - query: planets/2
+                - playgroundQueryUuid: ''
+                - playgroundQueryId: 0
+                - privateParams: []
+                - triggersOnSuccess: []
+                - runWhenPageLoadsDelay: ''
+                - data: null
+                - importedQueryInputs:
+                    ordered: []
+                - showSuccessConfetti: false
+                - isImported: false
+                - showSuccessToaster: true
+                - cacheKeyTtl: ''
+                - cookies: ''
+                - triggersOnFailure: []
+                - confirmationMessage: null
+                - isFetching: false
+                - rawData: null
+                - queryTriggerDelay: '0'
+                - watchedParams: []
+                - paginationDataField: ''
+                - timestamp: 0
+                - importedQueryDefaults:
+                    ordered: []
+                - enableTransformer: false
+                - runWhenPageLoads: false
+                - transformer: >-
+                    // type your code here
+
+                    // example: return formatDataAsArray(data).filter(row =>
+                    row.quantity > 20)
+
+                    return data
+                - queryTimeout: '10000'
+                - requireConfirmation: false
+                - type: GET
+                - enableCaching: false
+                - bodyType: json
+                - queryThrottleTime: '750'
+            createdAt: 2020-04-23T15:24:18.738Z
+            updatedAt: 2020-04-23T15:25:31.019Z
+      - query4:
+          pluginTemplate:
+            id: query4
+            type: datasource
+            subtype: SqlQuery
+            resourceName: onprem-db
+            template:
+              ordered:
+                - queryRefreshTime: ''
+                - databasePasswordOverride: ''
+                - queryDisabledMessage: ''
+                - successMessage: ''
+                - queryDisabled: ''
+                - playgroundQuerySaveId: 0
+                - resourceNameOverride: ''
+                - runWhenModelUpdates: true
+                - query: select * from audit_trail_events limit 10
+                - playgroundQueryUuid: ''
+                - playgroundQueryId: 0
+                - privateParams: []
+                - triggersOnSuccess: []
+                - runWhenPageLoadsDelay: ''
+                - warningCodes: []
+                - data: null
+                - importedQueryInputs:
+                    ordered: []
+                - showSuccessConfetti: false
+                - isImported: false
+                - showSuccessToaster: true
+                - dataArray: []
+                - cacheKeyTtl: ''
+                - triggersOnFailure: []
+                - databaseNameOverride: ''
+                - confirmationMessage: null
+                - isFetching: false
+                - rawData: null
+                - queryTriggerDelay: '0'
+                - watchedParams: []
+                - timestamp: 0
+                - importedQueryDefaults:
+                    ordered: []
+                - enableTransformer: false
+                - runWhenPageLoads: false
+                - transformer: >-
+                    // type your code here
+
+                    // example: return formatDataAsArray(data).filter(row =>
+                    row.quantity > 20)
+
+                    return data
+                - queryTimeout: '10000'
+                - requireConfirmation: false
+                - enableCaching: false
+                - databaseUsernameOverride: ''
+                - shouldEnableBatchQuerying: false
+                - queryThrottleTime: '750'
+            createdAt: 2020-04-23T15:26:35.430Z
+            updatedAt: 2020-04-23T15:26:43.064Z
+      - text2:
+          pluginTemplate:
+            id: text2
+            type: widget
+            subtype: TextWidget
+            template:
+              ordered:
+                - horizontalAlign: center
+                - truncateOverflow: false
+                - verticalAlign: center
+                - scrollOverflow: false
+                - tooltipText: ''
+                - value: '## Watermelon'
+                - renderAsHtml: false
+                - backgroundColor: '#478b60'
+                - textColor: '#d6757f'
+                - renderAsMarkdown: true
+            position2:
+              position2:
+                row: 10
+                col: 9
+                height: 2
+                width: 3
+            createdAt: 2020-05-28T15:36:22.838Z
+            updatedAt: 2020-05-28T15:37:22.414Z
+      - jsonschemaform1:
+          pluginTemplate:
+            id: jsonschemaform1
+            type: widget
+            subtype: JSONSchemaFormWidget
+            template:
+              ordered:
+                - liveValidate: true
+                - clearFormAfterSubmit: false
+                - jsonSchema: |-
+                    {
+                      "title": "A registration form",
+                      "description": "A simple form example.",
+                      "type": "object",
+                      "required": [
+                        "username",
+                        "password"
+                      ],
+                      "properties": {
+                        "username": {
+                          "type": "string",
+                          "title": "Username"
+                        },
+                        "password": {
+                          "type": "string",
+                          "title": "Password",
+                          "minLength": 3
+                        },
+                        "birthday": {
+                          "type": "string",
+                          "title": "Birthday",
+                        }
+                      }
+                    }
+                - data: |-
+                    {
+                      "username": "john.doe",
+                      "password": "johndoeisthebest",
+                      "birthday": "1970-01-15"
+                    }
+                - submitButtonFullWidth: false
+                - submitDisabled: ''
+                - uiSchema: |-
+                    {
+                      "username": {
+                        "ui:autofocus": true,
+                        "ui:emptyValue": ""
+                      },
+                      "password": {
+                        "ui:widget": "password",
+                        "ui:help": "Hint: Make it strong!"
+                      },
+                      "birthday": {
+                        "ui:widget": "datetime"
+                      }
+                    }
+                - submitButtonText: Submit
+                - onSubmit: ''
+                - loading: ''
+            position2:
+              position2:
+                row: 17
+                col: 8
+                height: 10
+                width: 4
+            createdAt: 2020-05-28T15:37:39.837Z
+            updatedAt: 2020-05-28T15:38:42.205Z
+      - transformer2:
+          pluginTemplate:
+            id: transformer2
+            type: function
+            subtype: Function
+            template:
+              ordered:
+                - funcBody: >-
+                    // Tip: Make sure to separate your dependencies into a
+                    variable. 
+
+
+                    // Correct 
+
+                    // const data = {{query1.data}}
+
+                    // data.map(...)
+
+
+                    // Incorrect 
+
+                    // {{query1.data}}.map(...) 
+
+
+                    return 5
+                - value: ''
+            createdAt: 2020-05-28T15:40:24.766Z
+            updatedAt: 2020-05-28T15:40:24.766Z
+      - datetimepicker1:
+          pluginTemplate:
+            id: datetimepicker1
+            type: widget
+            subtype: DateTimePickerWidget
+            template:
+              ordered:
+                - minDate: ''
+                - showTime: false
+                - formattedString: null
+                - tooltipText: ''
+                - value: null
+                - maxDate: ''
+                - placeholder: ''
+                - label: ''
+                - labelMaxWidth: ''
+                - labelPlacedOnLeft: false
+                - format: MM/DD/YYYY
+                - onSelect: ''
+                - disabled: ''
+                - useLocalTimezone: true
+            position2:
+              position2:
+                container: form1
+                row: 1
+                col: 6
+                height: 1
+                width: 4
+            createdAt: 2020-05-28T15:41:46.931Z
+            updatedAt: 2020-05-28T15:41:46.931Z
+      - form1:
+          pluginTemplate:
+            id: form1
+            type: widget
+            subtype: FormWidget
+            template:
+              ordered:
+                - spinWhenChildrenAreFetching: true
+                - clearFormAfterSubmit: false
+                - showBorder: true
+                - data: ''
+                - showDropShadow: true
+                - submitButtonFullWidth: false
+                - scroll: false
+                - submitDisabled: ''
+                - submitButtonText: Submit
+                - onSubmit: ''
+                - requiredFormControls: []
+                - loading: ''
+                - disabled: ''
+            position2:
+              position2:
+                row: 15
+                col: 1
+                height: 8
+                width: 6
+            createdAt: 2020-05-28T15:41:52.846Z
+            updatedAt: 2020-05-28T15:41:52.846Z
+      - textinput1:
+          pluginTemplate:
+            id: textinput1
+            type: widget
+            subtype: TextInputWidget
+            template:
+              ordered:
+                - validationMaxlengthValue: ''
+                - readonly: ''
+                - disabledKeyCodes: ''
+                - validationMaxValue: ''
+                - onBlur: ''
+                - currencyType: USD
+                - leftIconName: ''
+                - initialValue: ''
+                - validationMessage: ''
+                - tooltipText: ''
+                - value: ''
+                - suffix: ''
+                - validationMinlengthValue: ''
+                - validationLengthValue: ''
+                - placeholder: Search here...
+                - validationType: ''
+                - label: Name
+                - currencyMajorOnly: false
+                - formattedValue: ''
+                - labelMaxWidth: ''
+                - enableValidationType: false
+                - labelPlacedOnLeft: false
+                - onSubmit: ''
+                - validationMinValue: ''
+                - validationState:
+                    object:
+                      required: ''
+                      validationType: ''
+                - type: text
+                - allowedRegex: ''
+                - required: true
+            position2:
+              position2:
+                container: form1
+                row: 3
+                col: 6
+                height: 1
+                width: 4
+            createdAt: 2020-05-28T15:42:11.095Z
+            updatedAt: 2020-05-28T15:42:14.638Z
+      - iframe1:
+          pluginTemplate:
+            id: iframe1
+            type: widget
+            subtype: IFrameWidget
+            template:
+              ordered:
+                - pageUrl: 'https://retool.com'
+                - srcDoc: ''
+            position2:
+              position2:
+                row: 24
+                col: 2
+                height: 10
+                width: 6
+            createdAt: 2020-05-28T15:43:35.996Z
+            updatedAt: 2020-05-28T15:43:35.996Z
+  createdAt: null
+  version: 2.59.17
+  responsiveLayoutDisabled: false
+  urlFragmentDefinitions: []
+  pageLoadValueOverrides: []
